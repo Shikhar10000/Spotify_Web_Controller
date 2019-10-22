@@ -1,6 +1,7 @@
 # First releae of spotify_web_controller
 ## Version 0.1.3
 ## A web based spotify player
+This is a wrapper librariy to control spotify using chromedriver/GeckoDriver please leave me ideas to add to this library as issues in this repositry .
 
 ### Note:-
 Chromedriver/GeckoDriver musht be dowloaded and path must be provided to the login function in order for package to work correctly
