@@ -15,6 +15,25 @@ def login(uname,passw,chromedriver_path):
 	driver.find_element_by_id("login-button").click()
 	time.sleep(2)
 	return driver
+	
+	
+	
+def login_fb(uname,passw,chromedriver_path):
+	driver = webdriver.Chrome(executable_path=chromedriver_path)
+	driver.maximize_window()
+	url ='https://open.spotify.com/browse/featured'
+	driver.get(url)
+	element=element = driver.find_element_by_xpath(("//button[contains(text(),'Log in')]"))
+	element.click()
+	time.sleep(1.5) 
+	element=driver.find_element_by_xpath("//a[contains(text(),'Log in with Facebook')]")
+	element.click()
+	time.sleep(1.5) 
+	driver.find_element_by_xpath("//input[@name='email']").send_keys(uname)
+	driver.find_element_by_xpath("//input[@name='pass']").send_keys(passw)
+	driver.find_element_by_id("loginbutton").click()
+	time.sleep(2)
+	return driver
 def playlist(name,driver):
 	try:
 		driver.refresh()
