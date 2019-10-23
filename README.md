@@ -1,14 +1,14 @@
-# First releae of spotify_web_controller
+# First release of spotify_web_controller
 ## Version 0.1.3
 ## A web based spotify player
-This is a wrapper librariy to control spotify using chromedriver/GeckoDriver please leave me ideas to add to this library as issues in this repositry .
+spotify_web_controller is a wrapper library to control spotify using chromedriver/GeckoDriver. Ideas for implementation of more features will be greatly appreciated. 
 
 ### Note:-
-Chromedriver/GeckoDriver musht be dowloaded and path must be provided to the login function in order for package to work correctly
+Chromedriver/GeckoDriver must be downloaded and path must be provided to the login function in order for package to work correctly.
 
 and make sure 
 
-chromeDriver version= Version of your chrome
+chromeDriver version = Version of your chrome
 
 #### chrome driver download link:-
 
@@ -51,3 +51,12 @@ spy.del_play(driver,"playlist_name")
 ```
 spy.closedr(driver)
 ```
+
+## How to Use
+### Steps:
+1. Clone the repo or download the zip file.
+2. Install the package, for eg. 'pip3 install spotify_web_controller'.
+3. Open basic_usage.py showcase the already implemented basic functionalities.
+4. Replace spotify username, password and the path to chrome driver. For path to the chrome driver, first check your chrome browser version by going to Help < About Google Chrome. Then download the appropriate driver from the chrome driver download link provided above. Once downloaded, move the .exe file to the spotify_web_controller directory/folder. 
+5. At this point, you're ready to implement the package. Feel free to play around with the settings in __init.py__.
+
