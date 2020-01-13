@@ -57,5 +57,5 @@ spy.closedr(driver)
 1. Install the package, for eg. 'pip3 install spotify_web_controller'.
 2. basic_usage.py showcase the already implemented basic functionalities.
 3. Replace spotify username, password and the path to chrome driver. For path to the chrome driver, first check your chrome browser version by going to Help < About Google Chrome. Then download the appropriate driver from the chrome driver download link provided above. Once downloaded, move the .exe file to the spotify_web_controller directory/folder. 
-4. At this point, you're ready to implement the package. Feel free to play around with the settings in \__init.py__.
+4. At this point, you're ready to use the package
 
